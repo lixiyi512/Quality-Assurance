@@ -165,7 +165,7 @@ public class CitySim9002Test {
 	@Test
 	public void testLocationName_lc(){
 		Visitor v = new Visitor(1);
-		assertEquals("has left the city",v.LocationName(4));
+		assertEquals(" has left the city.",v.LocationName(4));
 	}
 	
 	//Student's preference towards four different locations

@@ -11,8 +11,8 @@ public class Student extends Visitor {
 	
 	public boolean preference(int loc){
 		boolean like = false;
-		if(loc == 0) like = false;
-		else if(loc == 1 || loc == 2 || loc ==3) like = true;
+		if(loc == LOC_CL) like = false;
+		else if(loc == LOC_SH || loc == LOC_TP || loc == LOC_DT) like = true;
 		return like;
 	}
 		
