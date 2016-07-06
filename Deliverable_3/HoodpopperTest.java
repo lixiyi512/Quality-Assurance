@@ -17,7 +17,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 public class HoodpopperTest {
 
 	static WebDriver driver = new HtmlUnitDriver();
-	//Trying to test using Javascript 
+	//Trying to test the element which uses Javascript by FirefoxDirver
 	//WebDriver driver = new FirefoxDriver();
 	
 	// Start at the page for hoodpopper for each test
@@ -70,12 +70,6 @@ public class HoodpopperTest {
 				assertTrue(s.contains("on_ident"));//Variable a and b are identifiers
 				assertTrue(s.contains("on_op"));//"=" and "+" are operators
 				assertTrue(s.contains("on_nl"));//Newline
-				
-	//			WebElement back = driver.findElement(By.linkText("Back"));
-	//			back.click();
-	//			WebElement s3 = driver.findElement(By.cssSelector("html"));
-	//			System.out.println(s3.getText());
-				
 			} catch(NoSuchElementException nseex){
 				fail();
 			}
@@ -153,7 +147,7 @@ public class HoodpopperTest {
 			WebElement tokens = driver.findElement(By.cssSelector("code"));
 			String s = tokens.getText();
 			assertTrue(s.contains("a"));//non-whitespace token: a
-			assertFalse(s.contains("[1, 1] "));//first whitespace shows up at first line, second position, which in the array is [1,1]	
+			assertFalse(s.contains("[1, 1] "));//first whitespace shows up at first line, second position, whose position in the array is [1,1]	
 		} catch(NoSuchElementException nseex){
 			fail();
 		}
