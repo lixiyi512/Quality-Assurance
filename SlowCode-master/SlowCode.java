@@ -37,7 +37,7 @@ public class SlowCode {
 	try {
 	    // Modify this value to increase loading time
 	    // (in ms)
-	    Thread.sleep(10000);
+	    //Thread.sleep(10000);
 	} catch (Exception lolex) {
 	    // We're living on the edge
 	}
