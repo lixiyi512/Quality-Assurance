@@ -36,9 +36,6 @@ public class GameOfLifeTest {
 		Cell c = new Cell();
 		c.setAlive(true);
 		c.setAlive(false);
-		//String text = c.getText();
-		//make sure the text on the button is " "
-		//assertEquals(" ", text);
 		String before = c.toStringOriginal();
 		String after = c.toString();
 		assertEquals(before, after);
