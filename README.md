@@ -1,1 +1,1 @@
-# IS2545_QA  
+# IS2545_Quality Assurance
